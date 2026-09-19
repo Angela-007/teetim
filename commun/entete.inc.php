@@ -1,19 +1,27 @@
 <?php
-// Afficher les parametre d'URL (querystring)
-print_r($_GET);
+// Afficher les parametre de la requete HTTP (querystring)
+// print_r($_GET);
 
 // Choix de langue
 // 1) Par défaut: français
 $langue = 'fr';
 
+// print_r($_COOKIE);
 // 2) Si l'utilisateur a fait un choix de langue par le passé (témoins HTTP/cookies)
 // alors changer la variable au code langue sauvegardé
+if (isset($_COOKIE ['teetimLangueChoisie'])) {
+    $langue = $_COOKIE ['teetimLangueChoisie'];
+}
 
 // 3) Si l'utilisateur clique le bouton de langue, charger la variable 
 // au code de langue correspondant
 if (isset($_GET ["lan"])) {
     $langue = $_GET ["lan"];
+
+    // Memoriser ce choix dans un temoin HTTP (cookie)
+    setcookie('teetimLangueChoisie', $langue, time() + 365 * 24 * 60 * 60);
 }
+
 
 // A) Lire le fichier JSON contenant les textes
 $textesJSON = file_get_contents("i18n/textes-$langue.json");
@@ -53,8 +61,8 @@ $_pp = $textes -> pp;
     <div class="conteneur">
         <header>
             <nav class="barre-haut">
-                <a class="" href="index.php?lan=fr">fr</a>
-                <a class="" href="index.php?lan=en">en</a>
+                <a class="" href="?lan=fr">fr</a>
+                <a class="" href="?lan=en">en</a>
             </nav>
             <nav class="barre-logo">
                 <label for="cc-btn-responsive" class="material-icons burger">menu</label>
