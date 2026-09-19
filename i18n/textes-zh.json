@@ -1,53 +1,53 @@
 {
     "entete": {
         "meta": {
-            "title": "teeTIM // 天然纤维 ... 人工设计[cite: 3]",
-            "desc": "100%魁北克制造的服装设计师主页，由TIM学生使用人工智能生成的图案设计，并采用100%天然有机纤维制作[cite: 3]。"
+            "title": "teeTIM // 天然纤维 ... 人工设计",
+            "desc": "100%魁北克制造的服装设计师主页，由TIM学生使用人工智能生成的图案设计，并采用100%天然有机纤维制作。"
         },
-        "recherchePlaceholder": "搜索[cite: 3]",
-        "logoAlt": "首页[cite: 3]",
+        "recherchePlaceholder": "搜索",
+        "logoAlt": "首页",
         "navigationPrincipale": {
-            "navTeeshirts": "T恤[cite: 3]",
-            "navCasquettes": "帽子[cite: 3]",
-            "navHoodies": "连帽衫[cite: 3]",
-            "navAide": "帮助[cite: 3]",
-            "navNous": "关于我们[cite: 3]"
+            "navTeeshirts": "T恤",
+            "navCasquettes": "帽子",
+            "navHoodies": "连帽衫",
+            "navAide": "帮助",
+            "navNous": "关于我们"
         }
     },
     "pp": {
         "achats": {
-            "titre": "您的购买[cite: 3]",
-            "navFaq": "常见问题[cite: 3]",
-            "navLivraison": "包裹配送[cite: 3]",
-            "navCodition": "销售条款[cite: 3]",
-            "navConfid": "隐私政策[cite: 3]"
+            "titre": "您的购买",
+            "navFaq": "常见问题",
+            "navLivraison": "包裹配送",
+            "navCondition": "销售条款",
+            "navConfid": "隐私政策"
         },
         "apropos": {
-            "titre": "关于 teeTIM[cite: 3]",
-            "navCompagnie": "公司[cite: 3]",
-            "navEquipe": "团队[cite: 3]",
-            "navEmploi": "工作机会[cite: 3]"
+            "titre": "关于 teeTIM",
+            "navCompagnie": "公司",
+            "navEquipe": "团队",
+            "navEmploi": "工作机会"
         },
         "coordonnees": {
-            "titre": "联系我们[cite: 3]",
-            "tel": "免费电话：[cite: 3]",
-            "courriel": "电子邮箱：aide@teetim.ca[cite: 3]"
+            "titre": "联系我们",
+            "tel": "免费电话：",
+            "courriel": "电子邮箱：aide@teetim.ca"
         },
-        "droits": "版权所有，[cite: 3]"
+        "droits": "版权所有，"
     },
     "accueil": {
-        "amorceH1": "在魁北克制造的T恤、连帽衫和帽子 💯[cite: 3]",
-        "amorceH2": "在 TIM 用 ❤️ 设计[cite: 3]",
-        "amorceH4": "/** 在 DALL-E 的一点点帮助下 😉 **/[cite: 3]",
-        "para1": "如今，T恤已成为每个人衣橱中不可或缺的服装。在环境问题比以往任何时候都更加紧迫的时代，我们更倾向于选择魁北克制造的T恤，以减少环境影响并突显本地工艺[cite: 3]。",
-        "para2": "V领、圆领、宽松或修身、短袖或为怕冷的人准备的长袖、纯色或带图案以打造时尚造型……T恤提供多种颜色、款式和图案可供选择[cite: 3]。"
+        "amorceH1": "在魁北克制造的T恤、连帽衫和帽子 💯",
+        "amorceH2": "在 TIM 用 ❤️ 设计",
+        "amorceH4": "/** 在 DALL-E 的一点点帮助下 😉 **/",
+        "para1": "如今，T恤已成为每个人衣橱中不可或缺的服装。在环境问题比以往任何时候都更加紧迫的时代，我们更倾向于选择魁北克制造的T恤，以减少环境影响并突显本地工艺。",
+        "para2": "V领、圆领、宽松或修身、短袖或为怕冷的人准备的长袖、纯色或带图案以打造时尚造型……T恤提供多种颜色、款式和图案可供选择。"
     },
     "teeshirts": {
-        "amorceH1": "我们的T恤[cite: 3]",
-        "enConstruction": "即将推出...[cite: 3]"
+        "amorceH1": "我们的T恤",
+        "enConstruction": "即将推出..."
     },
     "casquettes": {
-        "amorceH1": "我们的帽子[cite: 3]",
-        "enConstruction": "即将推出...[cite: 3]"
+        "amorceH1": "我们的帽子",
+        "enConstruction": "即将推出..."
     }
 }

@@ -41,7 +41,7 @@ $_pp = $textes->pp;
 ?>
 
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="" dir="rtl">
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,6 +70,11 @@ $_pp = $textes->pp;
                             } else {
                                 echo '';
                             } ?>" href="?lan=en">en</a>
+                <a class="<?php if ($langue === 'zh') {
+                                echo 'actif';
+                            } else {
+                                echo '';
+                            } ?>" href="?lan=zh">zh</a>
             </nav>
             <nav class="barre-logo">
                 <label for="cc-btn-responsive" class="material-icons burger">menu</label>
