@@ -9,19 +9,18 @@ $langue = 'fr';
 // print_r($_COOKIE);
 // 2) Si l'utilisateur a fait un choix de langue par le passé (témoins HTTP/cookies)
 // alors changer la variable au code langue sauvegardé
-if (isset($_COOKIE ['teetimLangueChoisie'])) {
-    $langue = $_COOKIE ['teetimLangueChoisie'];
+if (isset($_COOKIE['teetimLangueChoisie'])) {
+    $langue = $_COOKIE['teetimLangueChoisie'];
 }
 
 // 3) Si l'utilisateur clique le bouton de langue, charger la variable 
 // au code de langue correspondant
-if (isset($_GET ["lan"])) {
-    $langue = $_GET ["lan"];
+if (isset($_GET["lan"])) {
+    $langue = $_GET["lan"];
 
     // Memoriser ce choix dans un temoin HTTP (cookie)
     setcookie('teetimLangueChoisie', $langue, time() + 365 * 24 * 60 * 60);
 }
-
 
 // A) Lire le fichier JSON contenant les textes
 $textesJSON = file_get_contents("i18n/textes-$langue.json");
@@ -33,11 +32,11 @@ $textes = json_decode($textesJSON);
 // Raccourci: tous les textes du contenu spécifique à chaque page
 // La variable $page existe dans ce contexte car elle est définie avant
 // L'inclusion (copier/coller) de ce fichier
-$_ = $textes -> $page;
+$_ = $textes->$page;
 // Raccourci: les textes de l'entete
-$_ent = $textes -> entete;
+$_ent = $textes->entete;
 // Raccourci: les textes du pied de page
-$_pp = $textes -> pp;
+$_pp = $textes->pp;
 
 ?>
 
@@ -61,8 +60,16 @@ $_pp = $textes -> pp;
     <div class="conteneur">
         <header>
             <nav class="barre-haut">
-                <a class="" href="?lan=fr">fr</a>
-                <a class="" href="?lan=en">en</a>
+                <a class="<?php if ($langue === 'fr') {
+                                echo 'actif';
+                            } else {
+                                echo '';
+                            } ?>" href="?lan=fr">fr</a>
+                <a class="<?php if ($langue === 'en') {
+                                echo 'actif';
+                            } else {
+                                echo '';
+                            } ?>" href="?lan=en">en</a>
             </nav>
             <nav class="barre-logo">
                 <label for="cc-btn-responsive" class="material-icons burger">menu</label>
@@ -73,11 +80,11 @@ $_pp = $textes -> pp;
             <input type="checkbox" id="cc-btn-responsive">
             <nav class="principale">
                 <label for="cc-btn-responsive" class="menu-controle material-icons">close</label>
-                <a href="teeshirts.php"><?=$_ent->navigationPrincipale->navTeeshirts?></a>
-                <a href="casquettes.php"><?=$_ent->navigationPrincipale->navCasquettes?></a>
-                <a href="hoodies.php"><?=$_ent->navigationPrincipale->navHoodies?></a>
+                <a href="teeshirts.php"><?= $_ent->navigationPrincipale->navTeeshirts ?></a>
+                <a href="casquettes.php"><?= $_ent->navigationPrincipale->navCasquettes ?></a>
+                <a href="hoodies.php"><?= $_ent->navigationPrincipale->navHoodies ?></a>
                 <span class="separateur"></span>
-                <a href="aide.php"><?=$_ent->navigationPrincipale->navAide?></a>
-                <a href="apropos.php"><?=$_ent->navigationPrincipale->navNous?></a>
+                <a href="aide.php"><?= $_ent->navigationPrincipale->navAide ?></a>
+                <a href="apropos.php"><?= $_ent->navigationPrincipale->navNous ?></a>
             </nav>
         </header>

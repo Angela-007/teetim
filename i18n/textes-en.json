@@ -5,7 +5,7 @@
             "desc": "Home page of the clothing designer 100% made in Quebec, designed by TIM students using designs produced by artificial intelligence, and made with 100% natural and organic fibers."
         },
         "recherchePlaceholder": "Search",
-        "logoAlt":"Home",
+        "logoAlt": "Home",
         "navigationPrincipale": {
             "navTeeshirts": "T-shirts",
             "navCasquettes": "Caps",
@@ -13,15 +13,34 @@
             "navAide": "Help",
             "navNous": "About us"
         }
-
     },
-    "pp": {},
+    "pp": {
+        "achats": {
+            "titre": "Your purchases",
+            "navFaq": "Frequently asked questions",
+            "navLivraison": "Package delivery",
+            "navCodition": "Terms of sale",
+            "navConfid": "Privacy policy"
+        },
+        "apropos": {
+            "titre": "About teeTIM",
+            "navCompagnie": "The company",
+            "navEquipe": "The team",
+            "navEmploi": "Jobs"
+        },
+        "coordonnees": {
+            "titre": "Contact us",
+            "tel": "Toll-free:",
+            "courriel": "Email: aide@teetim.ca"
+        },
+        "droits": "All rights reserved,"
+    },
     "accueil": {
-        "amorceH1":"T-shirts, hoodies, and caps made in Quebec 💯",
-        "amorceH2":"Designed at TIM with ❤️",
-        "amorceH4":"/** with a little bit of help from DALL-E 😉 **/",
-        "para1":"Today, the t-shirt is an essential garment in everyone's wardrobe. And at a time when environmental issues are more pressing than ever, we prefer t-shirts made in Quebec to reduce environmental impact and highlight local craftsmanship.",
-        "para2":"V-neck, crew neck, loose or fitted, short-sleeved or long-sleeved for those who get cold easily, plain or patterned to style an outfit… The t-shirt is available in a variety of colors, styles, and patterns."
+        "amorceH1": "T-shirts, hoodies, and caps made in Quebec 💯",
+        "amorceH2": "Designed at TIM with ❤️",
+        "amorceH4": "/** with a little bit of help from DALL-E 😉 **/",
+        "para1": "Today, the t-shirt is an essential garment in everyone's wardrobe. And at a time when environmental issues are more pressing than ever, we prefer t-shirts made in Quebec to reduce environmental impact and highlight local craftsmanship.",
+        "para2": "V-neck, crew neck, loose or fitted, short-sleeved or long-sleeved for those who get cold easily, plain or patterned to style an outfit… The t-shirt is available in a variety of colors, styles, and patterns."
     },
     "teeshirts": {
         "amorceH1": "Our t-shirts",
