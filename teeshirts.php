@@ -1,14 +1,20 @@
 <?php
+// Indique la pafe
+$page = "teeshirts";
+
 // Inclure le fichier commun contenant le haut du code des ecrans de UI
 include_once('commun/entete.inc.php');
+
+// Documenter (avec PHPDoc) la variable $_
+
 ?>
 
 <main class="page-teeshirts">
     <article class="amorce">
-        <h1>Nos teeshirts</h1>
+        <h1><?= $_->amorceH1;?></h1>
     </article>
     <article class="principal">
-        À venir...
+        <?= $_->enConstruction;?>
     </article>
 </main>
 
