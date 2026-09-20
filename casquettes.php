@@ -4,6 +4,7 @@ $page = "casquettes";
 
 // Inclure le fichier commun contenant le haut du code des ecrans de UI
 include_once('commun/entete.inc.php');
+
 // Ajouter une "annotation" (commentaire de documentation) pour signifier a PHPIntelephense que la vairable $_ existe dans ce contexte
 /** @var stdClass $_ */
 
